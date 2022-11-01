@@ -1,0 +1,34 @@
+<h2>Gestión de productos</h2>
+
+
+<form [formGroup]="userRegisterForm" (ngSubmit)="submit()">
+ <div>
+<label for="name">Nombre del producto:</label>
+<input type="text" id="name" placeholder="Producto" formControlName="name">
+<span *ngIf="userRegisterForm.controls['name'].errors">Este campo es requerido con un mínimo de 3 letras</span>
+</div>
+
+<div>
+<label for="price">Precio:</label>
+<input type="text" id="price" placeholder="$4.95" formControlName="price">
+<span *ngIf="userRegisterForm.controls['price'].errors">Este campo es requerido</span>
+</div>
+
+<div>
+  <label for="description">Descripción:</label>
+  <input type="text" id="description" placeholder="Descripción" formControlName="description">
+  <span *ngIf="userRegisterForm.controls['description'].errors">Este campo es requerido con un mínimo de 5 letras y un máximo de 60.</span>
+  </div>
+
+<div>
+<label for="image">Ruta de la imagen:</label>
+<input type="text" id="image" placeholder="Imagen" formControlName="image">
+<span *ngIf="userRegisterForm.controls['image'].errors">Este campo es requerido</span>
+</div>
+
+<div>
+<label for="rate">Opiniones:</label>
+<input type="text" id="rate" placeholder="Opiniones" formControlName="stars">
+</div>
+
+<button>Guardar</button>

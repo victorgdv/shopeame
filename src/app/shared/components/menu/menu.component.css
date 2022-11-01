@@ -1,0 +1,10 @@
+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1800px;
+    height: 10vh;
+    background: #efb65b;
+
+  }
+

@@ -1,0 +1,18 @@
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  background-color: white;
+}
+
+
+img{
+    height: 50px;
+  }
+
+
+
+
